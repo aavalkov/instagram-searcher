@@ -5,6 +5,7 @@ angular.module('instaApp', [])
 	.controller('instaCtrl', function($scope, $http){
 
 		$scope.submit = function(searchTag){
+			$scope.searchTag = searchTag;
 			var url = "https://api.instagram.com/v1/tags/"+ searchTag +"/media/recent";
 			var request = {
 				callback: 'JSON_CALLBACK',
@@ -25,12 +26,3 @@ angular.module('instaApp', [])
 			});
 		};		
 	});
-
-
-// https://api.instagram.com/v1/tags/{tag}/media/recent
-
-// callback: 'JSON_CALLBACK'
-// client_id: 'b0b45972a27f4a328b890f26d07ff87e'
-
-
-// b0b45972a27f4a328b890f26d07ff87e
