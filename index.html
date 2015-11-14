@@ -10,7 +10,7 @@
   <body>
     <div ng-controller="instaCtrl" class="container">
       <h1>Instagram Searcher</h1>       
-      <form name="instaSearchForm" novalidate ng-submit="submit()">
+      <form name="instaSearchForm" novalidate ng-submit="submit(searchTag)">
         <div class="col-md-6" align="center">
           <input type="text" name="searchTag" ng-model="searchTag" placeholder="Enter a tag to search" class="form-control" required/>
           <span class="error" ng-if="instaSearchForm.$submitted && instaSearchForm.searchTag.$error.required">
