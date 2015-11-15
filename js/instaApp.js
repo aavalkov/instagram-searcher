@@ -6,6 +6,9 @@ angular.module('instaApp', [])
 		$scope.waiting = false;
 
 		$scope.submit = function(searchTag){
+			if (!$scope.instaSearchForm.$valid){
+				return false;
+			}
 			var tag = searchTag;
 			$scope.resultTag = tag;
 			$scope.results = false;
