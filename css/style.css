@@ -1,0 +1,13 @@
+.resultImg {
+    float: left;
+    margin: 20px;
+}
+.resultInfo, .waiting {
+	text-align: center;
+	font-size: 16px;
+	margin-top:20px;
+}
+
+.title {
+	text-align: center;
+}
